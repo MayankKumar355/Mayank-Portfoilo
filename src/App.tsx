@@ -11,6 +11,7 @@ import { Footer } from './components/Footer';
 import { WhatsAppDialog } from './components/WhatsAppDialog';
 import { MasterSheetDrawer } from './components/MasterSheetDrawer';
 import { CustomCursor } from './components/CustomCursor';
+import { HindiSongPlayer } from './components/HindiSongPlayer';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<string>('home');
@@ -40,6 +41,9 @@ export default function App() {
       {/* Gemini Custom Cursor & Following Background Linear/Radial Gradient Animation */}
       <CustomCursor />
       
+      {/* Old Hindi Songs Player Bar */}
+      <HindiSongPlayer />
+
       {/* Header Bar */}
       <Header
         activeTab={activeTab}
